@@ -201,8 +201,8 @@ class RedisContainer {
       cwd: __dirname
     });
 
-    const cmdOptions = [];
-    const volumes = [];
+    const cmdOptions: any[] = [];
+    const volumes: any[] = [];
 
     if (this._options.storage) {
       const stat = fs.statSync(this._options.storage);
