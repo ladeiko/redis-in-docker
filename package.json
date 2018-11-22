@@ -1,8 +1,9 @@
 {
   "name": "redis-in-docker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf ./dist && tsc && cp ./Dockerfile* ./dist",
     "test": "npm run build && mocha --require ts-node/register --bail --timeout 0 --slow 600000 test/*.spec.ts",
